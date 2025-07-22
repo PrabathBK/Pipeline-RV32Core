@@ -1,0 +1,35 @@
+include_dirs:
+  # - inc
+
+source_dirs:
+  - src
+  - tb
+
+auto_search_workdir: true
+
+verilator:
+  syntax:
+    enabled: true
+    path: "verilator"
+    args:
+      - --lint-only
+      - --timing
+      - --sv
+      - -Wall
+      - -Isrc
+      - -Itb
+      # - -Iinc
+
+verible:
+  syntax:
+    enabled: true
+    path: "verible-verilog-syntax"
+    # args:
+    #   - arg1
+    #   - arg2
+  format:
+    enabled: true
+    path: "verible-verilog-format"
+    # args:
+    #   - arg1
+    #   - arg2

@@ -1,0 +1,5 @@
+read_verilog -sv src/rv32_core.sv
+synth -top rv32_core;
+write_json synth/synthesized.json
+write_verilog synth/synthesized.v
+show -prefix ./schematic.png -colors 1 -format png

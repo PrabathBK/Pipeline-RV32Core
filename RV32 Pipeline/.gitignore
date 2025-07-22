@@ -1,0 +1,10 @@
+.Xil/
+xil/
+obj_dir/
+tmp/
+coverage.dat
+zybo/zybo.cache
+vivado_**
+vivado.jou
+vivado.log
+.ropeproject/
